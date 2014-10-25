@@ -4,28 +4,28 @@ import winsound, sys, wave
 major = [0, 2, 4, 5, 7, 9, 11]
 soundDir = "C:/Codedump/birdsong/sounds/"
 clipDict = { \
-			40: "183059__quartertone__gtrclass-00f-6s-40-v05.wav", \
-			41: ".wav", \
-			42: "183042__quartertone__gtrclass-02f-6s-42-v05.wav", \
-			43: ".wav", \
-			44: "183072__quartertone__gtrclass-04f-6s-44-v05.wav", \
-			45: "182966__quartertone__gtrclass-00f-5s-45-v04.wav", \
-			46: ".wav", \
-			47: "183029__quartertone__gtrclass-02f-5s-47-v05.wav", \
-			47: ".wav", \
-			49: "183000__quartertone__gtrclass-04f-5s-49-v05.wav", \
-			50: "182945__quartertone__gtrclass-00f-4s-50-v01.wav", \
-			51: ".wav", \
-			52: "183083__quartertone__gtrclass-02f-4s-52-v01.wav", \
-			53: ".wav", \
-			54: "182979__quartertone__gtrclass-04f-4s-54-v01.wav", \
-			55: "182944__quartertone__gtrclass-00f-3s-55-v01.wav", \
-			56: ".wav", \
-			57: "183087__quartertone__gtrclass-02f-3s-57-v02.wav", \
-			58: ".wav", \
-			59: "183007__quartertone__gtrclass-00f-2s-59-v01.wav", \
-			60: ".wav", \
-			61: ".wav", \
+			40: "40-G.wav", \
+			41: "birds011.wav", \
+			42: "43-G.wav", \
+			43: "birds011.wav", \
+			44: "44-G.wav", \
+			45: "45-G.wav", \
+			46: "birds011.wav", \
+			47: "47-G.wav", \
+			47: "birds011.wav", \
+			49: "49-G.wav", \
+			50: "50-G.wav", \
+			51: "birds011.wav", \
+			52: "52-G.wav", \
+			53: "birds011.wav", \
+			54: "54-G.wav", \
+			55: "55-G.wav", \
+			56: "birds011.wav", \
+			57: "57-G.wav", \
+			58: "birds011.wav", \
+			59: "59-G.wav", \
+			60: "birds011.wav", \
+			61: "birds011.wav", \
 			}
 print(clipDict[42])
 winsound.PlaySound('/sounds/%s.wav' % clipDict[42], winsound.SND_FILENAME)

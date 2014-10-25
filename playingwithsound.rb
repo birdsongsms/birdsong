@@ -20,5 +20,6 @@ asciiChars.each do |ascii|
 	puts ascii%12
 end
 
-#Sound.play("sounds/birds011")
+Sound.play("sounds/birds011.wav")
+Sound.play("sounds/birds011.wav")
 
