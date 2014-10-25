@@ -5,10 +5,14 @@ include Win32
 asciiChars = []
 inputString = "thisisastringthatiwanttomakelonger to test mor!!£$%215235352412P{}@P_+-=-';/;["
 
+soundDir = "sounds/"
 h = { 
-	0 => "0.wav", 
-	1 => "1.wav",
-	2 => "2.wav" }
+	0 => "birds0.wav", 
+	1 => "birds1.wav",
+	2 => "birds2.wav",
+	3 => "birds3.wav", 
+	4 => "birds4.wav"
+}
 
 puts h.fetch(1)
 inputChars = inputString.split(//)
@@ -17,7 +21,10 @@ inputChars.each do |char|
 end
 
 asciiChars.each do |ascii|
-	puts ascii%12
+	sound= soundDir+h.fetch(ascii%5)
+	Sound.play(sound,Sound::ASYNC)
+	puts sound
+
 end
 
 Sound.play("sounds/birds011.wav")
